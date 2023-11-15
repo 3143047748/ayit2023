@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <style>
+        body {
+            background-image: url('123.jpg'); /* 设置背景图片路径 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>文件上传</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file">选择文件</label>
+            <input type="file" name="file" id="file">
+            <button type="submit">上传</button>
+        </form>
+    </div>
+</body>
+</html>
